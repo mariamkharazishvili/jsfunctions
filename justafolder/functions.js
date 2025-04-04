@@ -31,13 +31,15 @@ function sum(num1,num2){
 }
 
 console.log(sum(12,8));
-// 3. დაწერეთ ფუნქცია რომელიც დააბეჭდავს თქვენ სახელს და გვარს ( ფუნქციას არ აქვს პარამეტრი) //DASAWERRRRRRRRRRRRRIIIIIIIIAAAAAAAAA
+// 3. დაწერეთ ფუნქცია რომელიც დააბეჭდავს თქვენ სახელს და გვარს ( ფუნქციას არ აქვს პარამეტრი) 
 
-// function fullName(){
-//     firstName + lastName
-//     console.log
-// }
+function fullName(){
+    
+    console.log("mariam kharazishvili");
+}
 
+
+fullName();
 
 /*4. დაწერეთ ფუნქცია ორი პარამეტრით : firstname და lastname 
 დააბრუნეთ სრული სახელი და დაბეჭდეთ ( ფუნქცია აბრუნებს სრულ სახელს და ფუნქციის გარეთ ბეჭდავთ)*/ 
@@ -45,7 +47,7 @@ console.log(sum(12,8));
 
 
 function name(firstName,lastName){
-    return firstName,lastName;
+    return firstName+" "+lastName;
 }
 
 console.log("mariam","kharazishvili")
@@ -68,9 +70,9 @@ console.log(multiplication(5));
 
 // Შემდეგი დავალებებისთვის გამოიყენეთ :ობიექტი student - რომელსაც აქვს შემდეგი properties:
 //  firstName, lastName, age, scores (scores არის შემდეგი რიცხვების მასივი: 4,7,5,3,2) და მეთოდი fullName 
-//  რომელიც აბრუნებს სტუდენტის სრულ სახელს ( ობიექტი შეიცავს მეთოდს, ცალკე ფუნქციად არ უნდა დაწეროთ ) */
+// //  რომელიც აბრუნებს სტუდენტის სრულ სახელს ( ობიექტი შეიცავს მეთოდს, ცალკე ფუნქციად არ უნდა დაწეროთ ) */
 
-let student ={
+const student ={
     firstName:"mariam",
     lastName:"kharazishvili",
     age:21,
@@ -86,6 +88,26 @@ let student ={
 console.log(student.fullName())
 
 //7. Დაწერეთ ფუნქცია რომელსაც გადასცემთ სტუდენტის ქულებს ( scores) და ფუნქცია დააბრუნებს  ქულების ჯამს
+function SumOfScores(){
+    let sum =0;
+    
+    
+    for(i=0;i<student.scores.length;i++){
+        sum += student.scores[i]
+    }
+    return sum
+}
+
+console.log(SumOfScores());
+
+
 
 //8. დაბეჭდეთ სტუდენტის სახელი და ასაკი
+
+console.log(student.firstName);
+console.log(student.age);
+
+
+
+
 
