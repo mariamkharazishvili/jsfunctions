@@ -46,11 +46,11 @@ fullName();
 
 
 
-function name(firstName,lastName){
+function full_Name(firstName,lastName){
     return firstName+" "+lastName;
 }
 
-console.log("mariam","kharazishvili")
+console.log(full_Name("mariam","kharazishvili"))
 
 /* 5. Დაწერეთ ფუნქცია რომელსაც გადასცემთ ერთ რიცხვს (n) და ფუნქციამ უნდა დააბრუნოს 1 დან ამ რიცხვამდე 
   (n-მდე) რიცხვების ნამრავლი ( ანუ თუ რიცხვი არის 3 ფუნქციამ უნდა დააბრუნოს 1*2*3 -ის მნიშვნელობა, 
